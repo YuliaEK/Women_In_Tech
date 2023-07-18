@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Feedback Widget</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet" href="/css/widget.css">
+
+</head>
+<body>
+  <div class="flex-container" style="border: 2px solid black">
+    <div class="nameDiv">
+      <h4>Enter your name to share your feedback with us</h4>
+      <br>
+      <span id="errMsg"> </span>
+      <input type="text" id="firstName" />
+      <button type="button" id="btnFirstName">
+        Next
+      </button>
+    </div>
+    
+    <div class="simleyDiv" id="simleyDiv">
+      <span class = "welcome" id="welcomeText"></span>
+      <span id="displayMood"></span><br />
+      <p>
+        <img class = "mood"src="./Images/sad.png" id="sad" alt="Sad" />
+        <img lass = "mood"src="./Images/angry.png" id="angry" alt="Angry" />
+        <img lass = "mood"src="./Images/happy.png" id="happy" alt="Happy" />
+      </p>
+      
+      <button type="button" id="btnMessage" class="btn btn-primary">
+        Submit
+      </button>
+
+    </div>
+    <div class="displayMessage" id="displayMessage"></div>
+  </div>
+  <script src='widget.js'></script>
+  
+
+
+</body>
+</html>
